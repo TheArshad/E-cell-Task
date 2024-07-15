@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: MuseoModerno;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar flex mt-9 mb-6 px-5 h-12">
+        <div class="logo ml-3 text-4xl ">
+            <div class="title">MELODY</div>
+        </div>
+
+        <div class="search-bar ml-36 h-12 flex items-center w-2/5 rounded-xl px-2 bg-slate-400">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/fkdzyfle.json" trigger="hover" style="width:35px;height:35px">
+            </lord-icon>
+            <input
+                class="rounded-full bg-slate-400 w-full p-4 py-2 border-none outline-none placeholder:text-slate-600 placeholder:text-xs"
+                type="text" placeholder="Search music, artist, categorie ...">
+        </div>
+
+        <div class="filter flex items-center gap-3 ml-20 bg-blue-950 text-white px-3 rounded-xl hover:cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+            Filter
+        </div>
+
+        <div class="bell mx-10 flex items-center">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/lznlxwtc.json" trigger="hover" style="width:30px;height:30px">
+            </lord-icon>
+        </div>
+
+        <div class="profile flex gap-9">
+            <div class="user-name flex items-center gap-3">
+                <i class="fa-solid fa-angle-down text-xl text-slate-400"></i>
+                <div>
+                    <p>Arshad</p>
+                    <p class="text-sm text-slate-400">Your Profile</p>
+                </div>
+            </div>
+            <div style="background-image: url('profile-pic.jpg');"
+                class="user-dp h-12 w-12 rounded-full bg-cover ml-10"></div>
+        </div>
+    </nav>
+
+    <div class="ui w-full h-[86.5vh] flex ">
+
+        <div class="left-portion h-full w-1/5 bg-[#143F6B] pl-4 pt-2  rounded-r-2xl">
+            <p class="text-sm text-gray-400 mb-5">Menu</p>
+            <ul>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-pink-300 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-house text-xl"></i></div>
+                    <li class="text-white text- hover:cursor-pointer">Home</li>
+                </div>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-arrow-trend-up text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Short</li>
+                </div>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-book text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Library</li>
+                </div>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-layer-group text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Catagorie</li>
+                </div>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-people-arrows text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Subscripsions</li>
+                </div>
+            </ul>
+
+            <p class="text-sm text-gray-400 mt-9 mb-5">Playlist</p>
+            <ul>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-plus text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Create new</li>
+                </div>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-music text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Relax</li>
+                </div>
+                <div class="flex gap-3 my-2 ">
+                    <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                            class="fa-solid fa-music text-xl"></i></div>
+                    <li class="text-slate-400 text- hover:cursor-pointer">Motivation</li>
+                </div>
+            </ul>
+
+            <footer>
+                <ul class=" mt-20">
+                    <div class="flex gap-3 my-2 ">
+                        <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                                class="fa-solid fa-triangle-exclamation text-xl"></i></i></div>
+                        <li class="text-slate-400 text- hover:cursor-pointer">Help center</li>
+                    </div>
+                    <div class="flex gap-3 my-2 ">
+                        <div class="bg-blue-400 rounded-md h-7 w-8 flex justify-center items-center"><i
+                                class="fa-solid fa-gear text-xl"></i></i></div>
+                        <li class="text-slate-400 text- hover:cursor-pointer">Setting</li>
+                    </div>
+                </ul>
+            </footer>
+        </div>
+
+        <div class="right-portion ml-10 w-4/5 flex">
+            <div class="middle-part w-2/3 ">
+                <div style="background-image: url('middlecart.jpg');"
+                    class="middlecart bg-red-300 w-full h-[32vh] p-4 rounded-xl bg-cover">
+                    <p class="text-[#a1c245] text-3xl ml-5 mt-3">Hello, Arshad !</p>
+                    <p class="text-white opacity-[0.7] ml-5 w-[20vw]">Welcome home! the air quality is good & fresh </p>
+
+                    <div class="weather w-full   ml-5 mt-24 ">
+                        <div class="flex">
+                            <div><i class="fa-solid fa-sun "></i></div>
+                            <p class="ml-5 ">+25 C</p>
+                        </div>
+                        <div class="flex">
+                            <div><i class="fa-solid fa-cloud "></i></div>
+                            <p class="ml-5 opacity-70 ">Fuzzy cloudy weather</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover mt-8">
+                    <p class="text-3xl font-bold">Discover</p>
+                    <div class="carts flex mt-2 w-full gap-4">
+                        <div style="background-image: url('cart3.png');"
+                            class=" cart1 rounded-lg w-1/3 h-[30vh] bg-cover"></div>
+                        <div style="background-image: url('cart2.png');"
+                            class=" cart1 rounded-lg w-1/3 h-[30vh] bg-cover"></div>
+                        <div style="background-image: url('cart1.png');"
+                            class=" cart1 rounded-lg w-1/3 h-[30vh] bg-cover"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-port w-1/3 ml-6">
+                <div class="fav-artist">
+                    <p class="text-[#5179A3] text-xl">favrate artist</p>
+                    <div class="artists flex mt-3 items-center">
+                        <div class="w-3/5 flex items-center">
+                            <div style="background-image: url('artist1.jpeg');"
+                                class="arist-dp h-14 w-14 rounded-full bg-cover"></div>
+                            <div class="artist-name text-lg ml-4 text-[#143F6B]">Alan walker</div>
+                        </div>
+                        <div class="w-2/5">
+                            <button class="subs-btn   bg-red-500 text-white p-2 rounded-xl px-3">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="artists flex mt-3 items-center">
+                        <div class="w-3/5 flex items-center">
+                            <div style="background-image: url('artist2.webp');"
+                                class="arist-dp h-14 w-14 rounded-full bg-cover"></div>
+                            <div class="artist-name text-lg ml-4 text-[#143F6B]">Tailer swift</div>
+                        </div>
+                        <div class="w-2/5">
+                            <button class="subs-btn   bg-blue-800 text-white p-2 rounded-xl px-3">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="artists flex mt-3 items-center">
+                        <div class="w-3/5 flex items-center">
+                            <div style="background-image: url('artist3.jpg');"
+                                class="arist-dp h-14 w-14 rounded-full bg-cover"></div>
+                            <div class="artist-name text-lg ml-4 text-[#143F6B]">Atif Aslam</div>
+                        </div>
+                        <div class="w-2/5">
+                            <button class="subs-btn   bg-blue-800 text-white p-2 rounded-xl px-3">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-[#5179A3]  text-xl mt-[12vh] font-semibold">Recently Played</p>
+                <div class="recently-played  flex-col h-[26vh]  overflow-scroll">
+                    <div class="songList w-[95%] h-[8vh]  flex-col items-center ">
+                        <div class="flex mt-3">
+                            <div class="songItemplay flex w-[23vw] hover:cursor-pointer" id="0">
+                                <div style='background-image: url(1.png);'
+                                    class="song-cover w-[4vw] h-[7vh] bg-cover ml-1 rounded-xl"></div>
+                                <div class="name-and-singer ml-1">
+                                    <div class="text-lg text-[#143F6B]" >Never Ending story</div>
+                                    <div class="text-[#143F6B] text-sm opacity-[0.7]">Dustin</div>
+                                </div>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart text-red-400 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="songItemplay flex w-[23vw] hover:cursor-pointer " id="1">
+                                <div style='background-image: url(2.png);'
+                                    class="song-cover w-[4vw] h-[7vh] bg-cover ml-1 rounded-xl"></div>
+                                <div class="name-and-singer ml-1">
+                                    <div class="text-lg text-[#143F6B]" >until I found her</div>
+                                    <div class="text-[#143F6B] text-sm opacity-[0.7]" >Stephen Sanchez
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart text-gray-400 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="songItemplay flex w-[23vw] hover:cursor-pointer" id="2">
+                                <div style='background-image: url(3.png);'
+                                    class="song-cover w-[4vw] h-[7vh] bg-cover ml-1 rounded-xl"></div>
+                                <div class="name-and-singer ml-1">
+                                    <div class="text-lg text-[#143F6B]" >Heat waves</div>
+                                    <div class="text-[#143F6B] text-sm opacity-[0.7]" >Glass Animals
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart text-red-400 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="songItemplay flex w-[23vw] hover:cursor-pointer" id="3">
+                                <div style='background-image: url(4.png);'
+                                    class="song-cover w-[4vw] h-[7vh] bg-cover ml-1 rounded-xl"></div>
+                                <div class="name-and-singer ml-1">
+                                    <div class="text-lg text-[#143F6B]">No Lie</div>
+                                    <div class="text-[#143F6B] text-sm opacity-[0.7]" >Dua Lipa</div>
+                                </div>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart text-gray-400 text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="position: absolute; bottom: 0.5vh;"
+                class="action-div bg-[#143F6B26] h-[14vh] w-[77vw] rounded-2xl flex items-center">
+                <div class="song-details w-[35%] h-[12vh] ml-2 flex">
+                    <div style="background-image: url(./covers/1.png);"
+                        class="song-cover h-[12vh] w-[7vw] bg-cover rounded-xl"></div>
+                    <div class="name-and-singer ml-3 mt-4">
+                        <div class="text-2xl text-[#143F6B]" id="song-Name">Never Ending story</div>
+                        <div class="text-[#143F6B] text-sm opacity-[0.7]" id="singer-name">Dustin</div>
+                    </div>
+                </div>
+                <div class="controlBar w-[45%] flex-col justify-center ">
+                    <div class="control-icons flex gap-6 justify-center mb-4">
+                        <div id="shufleIt"><i class="fa-solid fa-shuffle text-xl hover:cursor-pointer"></i></div>
+                        <div id="shufleIt"><i class="fa-solid fa-backward text-xl hover:cursor-pointer"></i></div>
+                        <div id="backwordIt"><i class="fa-solid fa-backward-step text-xl hover:cursor-pointer"></i></i>
+                        </div>
+                        <div id="playIt"><i class="fa-solid fa-circle-play  text-2xl hover:cursor-pointer"></i></div>
+                        <div id="forwordIt"><i class="fa-solid fa-forward-step text-xl hover:cursor-pointer"></i></div>
+                        <div id="shufleIt"><i class="fa-solid fa-forward text-xl hover:cursor-pointer"></i></div>
+                        <div id="repeatIt"><i class="fa-solid fa-repeat text-xl hover:cursor-pointer"></i></div>
+                    </div>
+                    <div class="controler ml-2 flex">
+                        <input style="outline: none;" type="range" id="seekbar" value="0" class="w-full">
+                        <div id="duration"></div>
+                    </div>
+                </div>
+
+                <div class="last-bottomPart flex  items-center justify-center">
+                    <i class="fa-solid fa-heart ml-2 text-lg hover:cursor-pointer"></i>
+                    <i class="fa-solid fa-headphones  ml-2 text-lg hover:cursor-pointer"></i>
+                    <i class="fa-solid fa-book  ml-2 text-lg hover:cursor-pointer"></i>
+                    <i class="fa-solid fa-volume-high  ml-2 text-lg hover:cursor-pointer"></i>
+                    <input type="range" class="w-[4vw] ml-3">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
